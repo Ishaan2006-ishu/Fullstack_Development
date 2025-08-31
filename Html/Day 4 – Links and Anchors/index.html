@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 04 - HTML Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            line-height: 1.8;
+        }
+
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+
+    
+
+    <!-- External link -->
+    <h2>External Link</h2>
+    <p>
+        Visit the official 
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+            MDN HTML Documentation
+        </a>.
+    </p>
+
+    <!-- Internal link (to another page in the project) -->
+    <h2>Internal Link</h2>
+    <p>
+        Go to <a href="about.html">About Page</a> (only works if you create about.html).
+    </p>
+
+    <!-- Email link -->
+    <h2>Email Link</h2>
+    <p>
+        Contact me: <a href="mailto:youremail@example.com">youremail@example.com</a>
+    </p>
+
+    <!-- Telephone link -->
+    <h2>Phone Link</h2>
+    <p>
+        Call us: <a href="tel:+1234567890">+1 234 567 890</a>
+    </p>
+
+    <!-- In-page Anchor Link -->
+    <h2>In-Page Anchor</h2>
+    <p>
+        Jump to the <a href="#footer">footer section</a> below.
+    </p>
+
+    <hr>
+
+    <p style="margin-top: 300px;">
+        This long space simulates scrolling.
+    </p>
+
+    <!-- Anchor target section -->
+    <footer id="footer">
+        <h3>Footer Section</h3>
+        <p>This is the target of the in-page anchor link above.</p>
+        <a href="#top">Back to top</a>
+    </footer>
+
+    <!-- Notes:
+        - <a> is the anchor tag used for links.
+        - Use href to specify the link destination.
+        - target="_blank" opens the link in a new tab.
+        - In-page navigation uses id + href="#idvalue".
+        - Use mailto: and tel: for email and phone links.
+    -->
+
+</body>
+</html>

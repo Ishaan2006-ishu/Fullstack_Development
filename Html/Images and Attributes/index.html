@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 05 - HTML Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    
+
+    <!-- Basic Image with absolute URL -->
+    <h2>Image from the Web</h2>
+    <img src="https://via.placeholder.com/300" alt="Placeholder image from the web" width="300" height="200">
+
+    <!-- Relative Image (this image must exist in your folder) -->
+    <h2>Local Image (Relative Path)</h2>
+    <p>
+        Below is an image using a relative file path:<br>
+        Save an image in the same folder and name it: <code>sunset.jpg</code>
+    </p>
+    <img src="sunset.jpg" alt="Beautiful sunset" width="400">
+
+    <!-- Image with title -->
+    <h2>Image with Title Attribute</h2>
+    <img src="https://via.placeholder.com/250" alt="Hover text demo" title="This text shows on hover">
+
+    <!-- Broken image example to demonstrate alt text -->
+    <h2>Broken Image Example (shows alt text)</h2>
+    <img src="notfound.jpg" alt="Image not found example" width="200">
+
+    <!-- Notes:
+        - <img> is a self-closing tag.
+        - src: the source of the image (URL or file path)
+        - alt: alternative text (shown if the image fails to load, or for screen readers)
+        - title: shows a tooltip when you hover over the image
+        - Always include alt text for accessibility and SEO
+    -->
+
+</body>
+</html>

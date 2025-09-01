@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 06 - Tables in HTML</title>
+</head>
+<body>
+    <!-- 
+        📌 Day 06 - Tables in HTML
+        Tables are used to display data in rows and columns.
+        Common tags:
+        - <table> : defines a table
+        - <tr> : defines a table row
+        - <th> : defines a table header (bold + centered)
+        - <td> : defines table data (cell)
+        - <caption> : defines table title
+        - <thead>, <tbody>, <tfoot> : groups table parts
+    -->
+
+
+    <!-- Simple Table -->
+    <h2>1. Simple Table</h2>
+    <table border="1">
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Alice</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Bob</td>
+            <td>85</td>
+        </tr>
+    </table>
+
+    <!-- Table with Caption -->
+    <h2>2. Table with Caption</h2>
+    <table border="1">
+        <caption>Student Scorecard</caption>
+        <tr>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>95</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>89</td>
+        </tr>
+    </table>
+
+    <!-- Advanced Table -->
+    <h2>3. Advanced Table with colspan and rowspan</h2>
+    <table border="1">
+        <tr>
+            <th rowspan="2">Department</th>
+            <th colspan="2">Employees</th>
+        </tr>
+        <tr>
+            <th>Male</th>
+            <th>Female</th>
+        </tr>
+        <tr>
+            <td>IT</td>
+            <td>10</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>HR</td>
+            <td>3</td>
+            <td>7</td>
+        </tr>
+    </table>
+
+</body>
+</html>
